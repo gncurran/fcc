@@ -1,0 +1,6 @@
+function slasher(arr, howMany) {
+  var removed = arr.slice(howMany);
+  return removed;
+}
+
+slasher([1, 2, 3], 0, "");
