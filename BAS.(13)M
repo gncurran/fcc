@@ -4,7 +4,7 @@ function mutation(arr) {
   var str2 = arr[1].toLowerCase().split('');
 
   var bigger = str1.length > str2.length ? str1 : str2;
-  var smaller = str1.length > str2.length ? str2 : str1;
+  var smaller = str1.length < str2.length ? str1 : str2;
 
   for (var i = 0; i < smaller.length; i++) {
     if (bigger.indexOf(smaller[i]) === -1) {
