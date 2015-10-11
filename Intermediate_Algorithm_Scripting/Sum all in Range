@@ -1,0 +1,18 @@
+function sumAll(arr) {
+
+    var low = Math.min(arr[0], arr[1]);
+    var high = Math.max(arr[0], arr[1]);
+
+    var list = [];
+  
+    for (var i = low; i <= high; i++) {
+        list.push(i);
+    }
+
+    var total = list.reduce(function(a, b) {
+        return a + b;
+    });
+
+    return total;
+}
+sumAll([1, 4]);
