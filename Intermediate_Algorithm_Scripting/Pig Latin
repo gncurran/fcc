@@ -1,0 +1,16 @@
+function translate(str) {
+  var final = '';
+  var re = /[aeiou]/gi;
+  
+  if (str[0].match(re)) {
+    final = str + "way";
+  } else {
+
+  var vowelStart = str.indexOf(str.match(re)[0]);
+  final = str.substr(vowelStart) + str.substr(0, vowelStart) + 'ay';
+  }
+
+  return final;
+}
+
+translate("algorithm");
