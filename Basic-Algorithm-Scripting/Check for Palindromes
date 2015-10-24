@@ -1,8 +1,0 @@
-function palindrome(str) {
-  var a = str.replace(/[\W_]/g, '').toLowerCase()
-  var b = a.split('').reverse().join('');
-
-  return a == b;
-}
-
-palindrome("race Car");

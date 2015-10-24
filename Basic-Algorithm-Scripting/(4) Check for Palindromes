@@ -1,0 +1,8 @@
+function palindrome(str) {
+  var lower = str.replace(/[\W_]/g, '').toLowerCase()   // remove punctuation & apply lowercase
+  var reverse = lower.split('').reverse().join('');
+
+  return lower == reverse;
+}
+
+palindrome("race Car");
