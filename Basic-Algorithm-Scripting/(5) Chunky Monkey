@@ -1,0 +1,14 @@
+function chunk(array, size) { 
+
+  var newArr = [];
+  var n = array.length;
+  var i = 0;
+
+  while (i < n) { 
+    newArr.push(array.slice(i, i += size)); 
+  } 
+
+  return newArr; 
+}
+  
+chunk(["a", "b", "c", "d"], 2, "");
