@@ -21,7 +21,7 @@ function repeat(str, num) {
 
 /* -- alernate solution with for loop:
 function repeat(str, num) {
-  var result = '', i;
+  var result = '';
 
   for (i = 1; i <= num; i *= 2) {
     if ((num & i) == i) {                         // if num == i, then:
