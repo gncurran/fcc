@@ -1,6 +1,0 @@
-function end(str, target) {
-  var lastChar = str.substr(str.length - target.length);
-  return lastChar === target;
-}
-
-end("He has to give me a new name", "name", "");
