@@ -1,6 +1,5 @@
 function bouncer(arr) {
-  var filtered = arr.filter(Boolean)
-  return filtered;
+  return arr.filter(Boolean);
 }
 
 bouncer([7, "ate", "", false, 9], "");
