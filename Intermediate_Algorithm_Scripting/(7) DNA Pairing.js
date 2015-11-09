@@ -25,3 +25,5 @@ function pair(str) {
 
   return paired;
 }
+
+pair("ATCGA")
